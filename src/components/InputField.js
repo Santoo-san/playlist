@@ -6,8 +6,8 @@ class InputField extends React.Component {
     this.state = {
       Song: "",
       Artist: "",
-      Genre: "this.state.Genre",
-      Rating: "this.state.Rating",
+      Genre: "",
+      Rating: "",
     };
     this.onSubmit = this.onSubmit.bind(this);
     //bind?
@@ -57,7 +57,8 @@ class InputField extends React.Component {
           className="input-secondary"
         ></input>
         <select name="Genre" onChange={this.onInput}>
-          <option value="this.state.Genre" disabled selected>
+          <option value="" disabled selected>
+            {/* this.state.Genre */}
             Kies een genre
           </option>
           <option value="Dance">Dance</option>
@@ -66,7 +67,8 @@ class InputField extends React.Component {
           <option value="Pop">Pop</option>
         </select>
         <select name="Rating" onChange={this.onInput}>
-          <option value="this.state.Rating" disabled selected>
+          <option value="" disabled selected>
+            {/* this.state.Rating */}
             Aantal sterren
           </option>
           <option value="1">1</option>
