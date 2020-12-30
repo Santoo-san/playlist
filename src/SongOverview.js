@@ -60,7 +60,6 @@ class SongOverview extends React.Component {
             <th className="song-row__item">Rating</th>
           </tr>
           <SongList
-            addSong={this.addSong}
             handleClickEmptySongList={this.emptyList}
             songs={this.state.songs}
           />
