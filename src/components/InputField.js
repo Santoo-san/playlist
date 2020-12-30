@@ -9,8 +9,8 @@ class InputField extends React.Component {
       Genre: "",
       Rating: "",
     };
+    this.onInput = this.onInput.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-    //bind?
   }
 
   onInput = (event) => {
@@ -56,9 +56,8 @@ class InputField extends React.Component {
           value={this.state.Artist}
           className="input-secondary"
         ></input>
-        <select name="Genre" onChange={this.onInput}>
+        <select name="Genre" value={this.state.Genre} onChange={this.onInput}>
           <option value="" disabled selected>
-            {/* this.state.Genre */}
             Kies een genre
           </option>
           <option value="Dance">Dance</option>
@@ -66,9 +65,8 @@ class InputField extends React.Component {
           <option value="HipHop">HipHop</option>
           <option value="Pop">Pop</option>
         </select>
-        <select name="Rating" onChange={this.onInput}>
+        <select name="Rating" value={this.state.Rating} onChange={this.onInput}>
           <option value="" disabled selected>
-            {/* this.state.Rating */}
             Aantal sterren
           </option>
           <option value="1">1</option>
