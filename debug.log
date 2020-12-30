@@ -1,0 +1,4 @@
+[1223/150341.544:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+[1227/184232.010:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+[1230/115659.134:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+[1230/143158.818:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: De opgegeven recordlengte van de gegevens komt niet overeen met de lengte die nodig is voor de opgegeven gegevensklasse. (0xc0000004)
