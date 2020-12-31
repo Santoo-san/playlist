@@ -1,26 +1,20 @@
 import "./App.css";
-import { nanoid } from "nanoid";
 import SongOverview from "./SongOverview";
+import AboutUs from "./components/AboutUs";
+import Navbar from "./components/NavBar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <SongOverview />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>{nanoid(5)}</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App-header">
+        <Navbar />
+        <Switch>
+          <Route path="/" component={SongOverview} exact />
+          <Route path="/AboutUs.js" component={AboutUs} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

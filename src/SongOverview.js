@@ -7,7 +7,6 @@ class SongOverview extends React.Component {
   constructor() {
     super();
     this.state = {
-      //sortState?: "",
       songs: [
         {
           id: "bgzNP",
@@ -39,10 +38,6 @@ class SongOverview extends React.Component {
     const item = { id: nanoid(5), ...song };
     this.setState({ songs: this.state.songs.concat(item) });
   };
-
-  // const handleClickSort = () => {
-  //   //doe iets om de click te handelen
-  // };
 
   emptyList = () => {
     this.setState({ songs: [] });
