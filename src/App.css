@@ -41,5 +41,8 @@
 
 .Nav > a,
 a:visited {
-  color: #dead54;
+  color: black;
+  background: #b08e33;
+  border: solid 3px #dead54;
+  padding: 5px;
 }
